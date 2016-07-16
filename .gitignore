@@ -1,0 +1,15 @@
+.gradle
+/rc
+/captures
+/local.properties
+/.idea
+.DS_Store
+/build
+.classpath
+.settings
+suites
+*.iml
+*.apk
+out
+*.metadata
+*.pyc
