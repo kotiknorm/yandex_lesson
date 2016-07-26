@@ -9,8 +9,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".view.MainActivity">
 
-    <ImageView
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/collageHolder"/>
+        android:id="@+id/rv"
+        android:scrollbars="vertical"/>
 </RelativeLayout>
