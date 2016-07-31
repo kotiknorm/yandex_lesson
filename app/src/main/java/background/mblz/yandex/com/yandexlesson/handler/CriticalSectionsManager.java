@@ -10,7 +10,9 @@ public class CriticalSectionsManager {
 
     public static CriticalSectionsHandler getHandler() {
         if (sCriticalSectionsHandler == null) {
-            sCriticalSectionsHandler = new StubCriticalSectionsHandler();
+            StubCriticalSectionsHandler stubCriticalSectionsHandler = new StubCriticalSectionsHandler();
+            sCriticalSectionsHandler = stubCriticalSectionsHandler;
+            stubCriticalSectionsHandler.work();
         }
         return sCriticalSectionsHandler;
     }

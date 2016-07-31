@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         ContentFragment contentFragment = (ContentFragment) supportFragmentManager.findFragmentById(R.id.content_layout);
         if (contentFragment == null) {
             contentFragment = new ContentFragment();
-            supportFragmentManager.beginTransaction().replace(R.id.content_layout, contentFragment);
+            supportFragmentManager.beginTransaction().replace(R.id.content_layout, contentFragment).commit();
         }
     }
 }
